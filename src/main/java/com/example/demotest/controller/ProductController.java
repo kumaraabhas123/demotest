@@ -17,17 +17,6 @@ public class ProductController {
     @Autowired
     private ProductService productService;
 
-    /**
-     * Gets Product availability status along with store no, product id, requested date and requested quantity.
-     *
-     * Checks Product availability on required date input by user and if status is equal to
-     * "No Capacity" or "No Content" or "Available", then return product details and Http Status OK
-     * Otherwise return Response code 204 - no content.
-     *
-     * @param productInput Object of ProductInput, stores data input by user
-     * @return product response i.e, product availability status and Http Status.
-     *
-     */
     @PostMapping("/getProdAvailability")
     public ResponseEntity<ProductResponse> getProductAvailability(@RequestBody ProductInput productInput)
     {

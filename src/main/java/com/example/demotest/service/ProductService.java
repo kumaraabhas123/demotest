@@ -18,14 +18,12 @@ public class ProductService{
         CapacityList.add(new ProductCapacity("Store001", "Prod1", LocalDate.of(2021,02,20), 2.0));
         CapacityList.add(new ProductCapacity("Store001", "Prod1", LocalDate.of(2021,02,21), 2.0));
         CapacityList.add(new ProductCapacity("Store001", "Prod1", LocalDate.of(2021,02,22), 0));
-
     }
 
     public void setAvailability(){
         AvailabilityList.add(new ProductAvailability("Store001", "Prod1", LocalDate.of(2021,02,19), 1.0));
         AvailabilityList.add(new ProductAvailability("Store001", "Prod2", LocalDate.of(2021,02,20), 3.0));
         AvailabilityList.add(new ProductAvailability("Store001", "Prod2", LocalDate.of(2021,02,21), 0));
-
     }
 
     public String getProductAvailability(LocalDate date) {
